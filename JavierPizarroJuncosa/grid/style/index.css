@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+b {
+    color: hsla(111, 0%, 100%, 1);
+    font-family: 'Courier New', Courier, monospace;
+}
+/*
+Para que especifiquemos las areas
+*/
+.menu { grid-area: nav;}
+.principal { grid-area: main;}
+.lateral { grid-area: aside;}
+.pie { grid-area: footer;}
+
+
+/*
+El grid container sirve para que nos esttructure bien la web
+*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'aside main main'
+    'footer footer footer';
+}
+/*
+Estilos para el menu
+*/
+.menu{
+    background-color: hsla(0, 98%, 51%, 1);
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+}
+/*
+Estilos para el principal
+*/
+.principal{
+    background-image: url(../img/Cabecera-para-que-sirven-los-bosques.jpg);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+/*
+Estilos para el lateral
+*/
+.lateral {
+    background-color: hsla(53, 57%, 71%, 1);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+/*
+Estilos para el pie de pagina
+*/
+.pie {
+    background-color: hsla(111, 50%, 75%, 1);
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+}
